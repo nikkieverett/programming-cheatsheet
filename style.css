@@ -1,3 +1,13 @@
 p strong{
   color: green;
 }
+
+div {
+  border: dashed 1px red;
+}
+
+span {
+  border: solid 1px blue;
+  display: inline-block;
+  width: 200px;
+}
