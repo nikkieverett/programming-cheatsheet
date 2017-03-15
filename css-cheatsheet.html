@@ -1,93 +1,194 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
-
     <title>Programming Cheat Sheet</title>
-
     <style>
 
-    body{
-      margin: 0;
-      padding: 0;
-    }
+      body{
+        margin: 0;
+        padding: 0;
+      }
 
-    .header {
-      background-color: white;
-      color: black;
-      border-bottom: solid 10px rgba(199, 148, 72, 1.0);
-      font-family: "lucida console", monospace;
-      font-size: 62px;
-      text-align: center;
-      width: 100%;
-      margin-left: -10px;
-      margin-top: -10px;
-    }
+      .header {
+        background-color: white;
+        color: black;
+        border-bottom: solid 10px rgba(199, 148, 72, 1.0);
+        font-family: "lucida console", monospace;
+        font-size: 62px;
+        text-align: center;
+        width: 100%;
+        margin-left: -10px;
+        margin-top: -10px;
+      }
 
-    .container {
-      height: 50px;
-      background-color: rgba(143, 143, 143, 1.0);
-      color: white;
-      margin-top: 10px;
-      font-family: 'arial', sans-serif;
-      font-size:40px;
+      .container {
+        height: 50px;
+        background-color: rgba(143, 143, 143, 1.0);
+        color: white;
+        margin-top: 10px;
+        font-family: 'arial', sans-serif;
+        font-size:40px;
 
-    }
+      }
 
-    li {
-      margin-right: 10px;
-      margin-top: 5px;
-    }
+      li {
+        margin-right: 10px;
+        margin-top: 5px;
+      }
 
-    #serif {
-      font-family: serif;
-    }
-    #sans-serif {
-      font-family: sans-serif;
-    }
-    #monospace {
-      font-family: monospace;
-    }
+      #serif {
+        font-family: serif;
+      }
+      #sans-serif {
+        font-family: sans-serif;
+      }
+      #monospace {
+        font-family: monospace;
+      }
 
-    img {
-      position: absolute;
-      right: 50px;
-      top: 1095px;
-      width: 600px;
+      img {
+        position: absolute;
+        right: 50px;
+        top: 160px;
+        width: 600px;
 
-    }
+      }
 
-    .font-families {
-      margin-left: 20px;
-      width: 40%;
-      height: 320px;
-    }
+      .font-families {
+        margin-left: 20px;
+        width: 40%;
+        height: 340px;
+      }
+
+      .color-box {
+        height: 100px;
+        width: 100px;
+        float: left;
+        margin-left: 75px;
+        background-color: darkSlateGrey;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        font-size: 25px;
+      }
+      .color-box span {
+        font-size: 14px;
+      }
+      .opacity-box {
+        height: 100px;
+        width: 100px;
+        float: left;
+        margin-left: 75px;
+        background-color: darkSlateGrey;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        font-size: 25px;
+      }
+
+
 
     </style>
-
   </head>
 
   <body>
-
     <div class="header">CSS CHEAT SHEET</div>
 
     <div class="container">
-
-      Background and Borders
-
+      Fonts and Text Decoration
     </div>
 
+    <div class="font-families">
+      <h3>The CSS font properties define the font family, boldness, size, and the style of a text.</h3>
+      <p>
+        The font family of a text is set with the font-family property. The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on. Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available. Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
+
+        Other font attributes that can modified:
+        <ul>
+          <li>
+            size (If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em). The size can be calculated from pixels to em using this formula: pixels/16=em)
+          </li>
+          <li>
+            style - normal, <em>italicised</em>, <span style="font-style: oblique">oblique</span>
+          </li>
+          <li>
+            weight - normal, <strong>bold</strong>
+          </li>
+          <li>
+            variant - normal, <span style="font-variant: small-caps">small caps</span>
+          </li>
+        </ul>
+      </p>
+      <img src="http://www.webresourcesdepot.com/wp-content/uploads/cssfontstack.gif" alt="font-families" />
+    </div>
+
+    <div class="container">
+      Borders and Backgrounds
+    </div>
     <h3>
-
-      The CSS background properties are used to define the background effects for elements.
-
+      The CSS border properties allow you to specify the style, width, and color of an element's border. The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border). This allows you to do mixed borders.
     </h3>
-
     <p>
+      Border styles include:
+      <ul>
+        <li style="border:solid 2px black">
+          solid
+        </li>
+        <li style="border:dotted 2px black">
+          dotted
+        </li>
+        <li style="border:dashed 2px black">
+          dashed
+        </li>
+        <li style="border:double 6px black">
+          double
+        </li>
+        <li style="border:groove 6px grey">
+          groove
+        </li>
+        <li style="border:ridge 6px grey">
+          ridge
+        </li>
+        <li style="border:inset 6px grey">
+          inset
+        </li>
+        <li style="border:outset 6px grey">
+          outset
+        </li>
+        <li style="border:none 2px black">
+          none
+        </li>
+        <li style="border:hidden 2px black">
+          hiden
+        </li>
+        <li style="border-top: dotted 2px black; border-bottom: dashed 2px black; border-left 2px black: solid 2px black; border-right: double">
+          mixed
+        </li>
+      </ul>
 
+      The border-radius property is used to add rounded borders to an element:
+      <ul>
+        <li style="border:solid 2px black">
+          normal
+        </li>
+        <li style="border:solid 2px black; border-radius: 2px">
+          round
+        </li>
+        <li style="border:solid 2px black; border-radius: 5px">
+          rounder
+        </li>
+        <li style="border:solid 2px black; border-radius: 7px">
+          roundest
+        </li>
+      </ul>
+    </p>
+
+    <h3>
+      The CSS background properties are used to define the background effects for elements.
+    </h3>
+    <p>
       The background-color property specifies the background color of an element.
-
       <ul>
         <li style="background-color:red">
           red
@@ -99,9 +200,7 @@
           green
         </li>
       </ul>
-
       Other background properties that can be used include:
-
       <ul>
         <li>background-image</li>
         <li>background-repeat</li>
@@ -110,124 +209,48 @@
       </ul>
     </p>
 
-    <h3>
-
-      The CSS border properties allow you to specify the style, width, and color of an element's border. The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border). This allows you to do mixed borders.
-
-    </h3>
-
-    <p>
-      Border styles include:
-
-      <ul>
-
-        <li style="border:solid 2px black">
-          solid
-        </li>
-
-        <li style="border:dotted 2px black">
-          dotted
-        </li>
-
-        <li style="border:dashed 2px black">
-          dashed
-        </li>
-
-        <li style="border:double 6px black">
-          double
-        </li>
-
-        <li style="border:groove 6px grey">
-          groove
-        </li>
-
-        <li style="border:ridge 6px grey">
-          ridge
-        </li>
-
-        <li style="border:inset 6px grey">
-          inset
-        </li>
-
-        <li style="border:outset 6px grey">
-          outset
-        </li>
-
-        <li style="border:none 2px black">
-          none
-        </li>
-
-        <li style="border:hidden 2px black">
-          hiden
-        </li>
-
-        <li style="border-top: dotted 2px black; border-bottom: dashed 2px black; border-left 2px black: solid 2px black; border-right: double">
-          mixed
-        </li>
-
-      </ul>
-
-      The border-radius property is used to add rounded borders to an element:
-
-      <ul>
-
-        <li style="border:solid 2px black">
-          normal
-        </li>
-
-        <li style="border:solid 2px black; border-radius: 2px">
-          round
-        </li>
-
-        <li style="border:solid 2px black; border-radius: 5px">
-          rounder
-        </li>
-
-        <li style="border:solid 2px black; border-radius: 7px">
-          roundest
-        </li>
-
-      </ul>
-
-    </p>
-
-    <div class="container">
-
-      Fonts and Text Decoration
-
-    </div>
-
-    <div class="font-families">
-
-      <h3>The CSS font properties define the font family, boldness, size, and the style of a text.</h3>
-
-      <p id="font-family">
-
-      The font family of a text is set with the font-family property.
-
-      The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on.
-
-      Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
-
-      Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
-
-    </p>
-
-    <img id="font-family" src="http://www.webresourcesdepot.com/wp-content/uploads/cssfontstack.gif" alt="font-families" />
-
-  </div>
-
-
-
     <div class="container">
       Color and Opacity
     </div>
 
-    <div class="container">
-      Animations
+    <div style="height: 300px">
+      <h3>Colors in CSS are most often specified by:</h3>
+      <div class="color-box">
+        Color Name
+        <br />
+        <span>"DarkSlateGrey"</span>
+      </div>
+      <div class="color-box">
+        RGB Value
+        <br />
+        <span>"rgb(47, 79, 79)"</span>
+      </div>
+      <div class="color-box" style="background-color: rgba(47, 79, 79, .5)">
+        RGBA Value
+        <br />
+        <span>"rgba(47, 79, 79, .5)"</span>
+      </div>
+      <div class="color-box">
+        HEX Value
+        <br />
+        <span>"#2F4F4F"</span>
+      </div>
     </div>
 
+    <a href="https://www.w3schools.com/colors/colors_names.asp">Here is a list of accepted color names</a>
 
+    <div style="height: 300px">
+      <h3>The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, being the more transparent.</h3>
+      <div class="opacity-box" style="opacity: 0.1">
+        0.0
+      </div>
+      <div class="opacity-box" style="opacity: 0.5">
+        0.5
+      </div>
+      <div class="opacity-box" style="opacity: 1.0">
+        1.0
+      </div>
+    </div>
   </body>
 
   </html>
