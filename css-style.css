@@ -1,0 +1,72 @@
+/* used to manage distribution of boxes */
+body {
+  margin: 0;
+  padding: 0;
+}
+#whole-page{
+  max-width: 1000px;
+  margin-left: 200px;
+}
+
+/* nav bar */
+.header {
+  background-color: white;
+  color: black;
+  font-family: "lucida console", monospace;
+  font-size: 62px;
+  border-bottom: solid 5px black;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+}
+.button {
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: 40px;
+  float:right;
+  margin-top:10px;
+  margin-right:20px;
+}
+
+/* nav bar links */
+.header a:link, a:visited, a:active, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* boxes */
+.container {
+  width: 27%;
+  height: 250px;
+  background-color: rgba(143, 143, 143, 1.0);
+  float:left;
+  margin-top: 20px;
+  margin-left: 20px;
+  overflow-x: auto;
+}
+
+/* text within boxes*/
+p {
+  padding-top: 30px;
+  color: white;
+  font-family: 'arial', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* links in boxes */
+.container a:link {
+  color: white;
+  text-decoration: none;
+}
+.container a:active{
+  color: white;
+  text-decoration: none;
+}
+.container a:visited{
+  color: white;
+  text-decoration: none;
+}
+.container a:hover {
+  color: white;
+  text-decoration: underline;
+}
