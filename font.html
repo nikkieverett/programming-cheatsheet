@@ -4,159 +4,102 @@
     <meta charset="utf-8">
     <title>CSS Font Properties</title>
     <link href="cssreset.css" rel="stylesheet" />
-    <style>
-
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      #whole-page{
-        max-width: 1000px;
-        margin-left: 200px;
-      }
-      /* nav bar */
-      .header {
-        background-color: white;
-        color: black;
-        font-family: "lucida console", monospace;
-        font-size: 62px;
-        border-bottom: solid 5px black;
-        margin: 0 auto 0 auto;
-        padding: 20px;
-      }
-      .button {
-        border: solid 2px black;
-        border-radius: 5px;
-        font-size: 40px;
-        float:right;
-        margin-top:10px;
-        margin-right:20px;
-      }
-      /* nav bar links */
-      .header a:link, a:visited, a:active, a:hover {
-        color: black;
-        text-decoration: none;
-      }
-      /* general text */
-      h3 {
-        font-size: 20px;
-        padding-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      p{
-        font-size:16px;
-        line-height: 20px;
-        margin-top:20px;
-        border: solid white 3px;
-        border-radius: 6px;
-        background-color: rgba(143, 143, 143, 1.0);
-        height:245px;
-        width:100%;
-        padding: 10px;
-        overflow-y: auto;
-      }
-      /*lists*/
-      ul {
-        text-align: left;
-        font-family: "arial", sans-serif;
-        max-width: 600px;
-        margin: 10px auto 10px auto;
-        line-height: 30px;
-      }
-      li{
-        list-style-type: square;
-        margin-left: 20px;
-      }
-      /* font examples */
-      .font-families {
-        position: realtive;
-        margin-left: 20px;
-        width: 30%;
-        height: 340px;
-      }
-      #serif {
-        font-family: serif;
-      }
-      #sans-serif {
-        font-family: sans-serif;
-      }
-      #monospace {
-        font-family: monospace;
-      }
-      img {
-        position:absolute;
-        left: 550px;
-        top: 160px;
-        width: 500px;
-      }
-      /* side notes */
-      .note1 {
-        border-left: black dotted 2px;
-        position:absolute;
-        left: 550px;
-        top: 500px;
-        width: 500px;
-        margin-left: 20px;
-      }
-      .note2 {
-        border-left: black dotted 2px;
-        position:absolute;
-        left: 550px;
-        top: 550px;
-        width: 500px;
-        margin-left: 20px;
-      }
-    </style>
+    <link href="css-style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Poiret+One" rel="stylesheet">
   </head>
 
   <body>
-    <div class="header">
-      <a href="index.html">CHEAT SHEET</a>
-      <div class="button" id="css">
-        <a href="css.html">CSS</a>
+    <header>
+      <a href="index.html">cheat sheet</a>
+      <div class ="button html">
+        <a href="html.html">html</a>
       </div>
-      <div class ="button" id="html">
-        <a href="html.html">HTML</a>
+      <div class="button js">
+        <a href="js.html">js</a>
       </div>
-      <div class="button" id="js">
-        <a href="js.html">JS</a>
-      </div>
-    </div>
-    <div id="whole-page">
-      <div class="font-families">
-        <h3>
-          The CSS font properties define the font family, boldness, size, and the style of a text.
-        </h3>
-        <p>
-          The font family of a text is set with the font-family property. The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on. Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
-        </p>
+    </header>
 
-        <h3>Other font attributes that can modified:</h3>
+    <div class="container">
+      <div class="column-left">
+        <h1>css</h1>
         <ul>
-          <li>
-            size - noraml, <span style="font-size: 20px">medium</span>,<span style="font-size:25px">large</span>
-          </li>
-          <li>
-            style - normal, <em>italicised</em>, <span style="font-style: oblique">oblique</span>
-          </li>
-          <li>
-            weight - normal, <strong>bold</strong>
-          </li>
-          <li>
-            variant - normal, <span style="font-variant: small-caps">small caps</span>
-          </li>
+          <li><a href="font.html">font and text properties</a></li>
+          <li><a href="borders.html">backgrounds and borders</a></li>
+          <li><a href="color.html">colors and opacity</a></li>
+          <li>selectors</li>
         </ul>
-        <div class="note1">
-          <strong>Note:</strong> If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
-        </div>
-        <div class="note2">
-          <strong>Note:</strong>The em size unit is recommended by the W3C.
-          1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
-          The size can be calculated from pixels to em using this formula: pixels/16=em
-
-        </div>
-        <img src="http://www.webresourcesdepot.com/wp-content/uploads/cssfontstack.gif" alt="font-families" />
+      </div>
+      <div class="column-right">
+        <h1>font properties</h1>
+        <h2>
+          The font property in CSS is a shorthand property that combines all the following sub-properties in a single declaration:
+        </h2>
+        <p>font-stretch: this property sets the font width.</p>
+        <ul>
+          <li>ultra-condensed</li>
+          <li>extra-condensed</li>
+          <li>condensed</li>
+          <li>semi-condensed</li>
+          <li>semi-expanded</li>
+          <li>expanded</li>
+          <li>extra-expanded</li>
+          <li>ultra-expanded</li>
+        </ul>
+        <p>font-style: makes the text appear italicised or oblique.</p>
+        <ul>
+          <li>italic</li>
+          <li>oblique</li>
+        </ul>
+        <p>font-variant: changes target text to small caps</p>
+        <ul>
+          <li>small-caps</li>
+        </ul>
+        <p>font-weight: sets the weight or the thickness of the font.</p>
+        <ul>
+          <li>bold</li>
+          <li>bolder</li>
+          <li>lighter</li>
+          <li>100, 200, 300, 400, 500, 600, 700, 800, 900</li>
+        </ul>
+        <p>font-size: sets the height of the font.</p>
+        <ul>
+          <li>xx-small</li>
+          <li>x-small</li>
+          <li>small</li>
+          <li>medium</li>
+          <li>large</li>
+          <li>x-large</li>
+          <li>xx-large</li>
+          <li>smaller, larger</li>
+          <li>percentage</li>
+        </ul>
+        <p>line-height: defines the amount of space above and below inline elements.</p>
+        <ul>
+          <li>number (font-size multiplier)</li>
+          <li>percentage</li>
+        </ul>
+        <p>font-family: definies the font that is applied to the element.</p>
+        <ul>
+          <li>sans-serif</li>
+          <li>serif</li>
+          <li>monospace</li>
+          <li>cursive</li>
+          <li>fantasy</li>
+          <li>caption</li>
+          <li>icon</li>
+          <li>menu</li>
+          <li>message-box</li>
+          <li>small-caption</li>
+          <li>status-bar</li>
+          <li>"string"</li>
+        </ul>
+        <h1>web fonts</h1>
+        <p>Unlike web safe fonts, web fonts are not pre-installed on the user's system. The fonts are downloaded by the user's browser while rendering the webpage, and then applied to your text. The main drawbacks of using web fonts is it will slow your site's load time. There is also limited support for CSS3 in older browsers which is required to use web fonts. The later limitation can be remedied by using a font stack, similar to the web safe font stacks, but including a web font as the first font of the stack. If a browser is unable to use the web font it will fall back on the web safe fonts in the stack.</p>
+        <h1>more information on fonts</h1>
+        <h2><a href="https://css-tricks.com/css-font-size/">Using px || em || % || pt || keyword</a></h2>
+        <h2><a href="https://www.w3.org/TR/css-fonts-3/#font-prop">an indepth look at font properties</a></h2>
+        <h2><a href="http://www.cssfontstack.com/Web-Fonts">web font gallery</a></h2>
+        <h2><a href="https://fonts.google.com/">google fonts</a></h2>
       </div>
     </div>
   </body>

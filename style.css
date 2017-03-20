@@ -1,61 +1,61 @@
-#whole-page{
-  max-width: 1000px;
-  margin: 10px auto 10px auto;
-  font-family:"arial", sans-serif;
-}
-
 /* nav bar */
 header {
   background-color: white;
+  border-bottom: black 5px solid;
   color: black;
   font-family: "lucida console", monospace;
   font-size: 62px;
-  border-bottom: solid 5px black;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   padding: 20px;
+  text-transform: uppercase;
 }
-/*header links*/
-a:link {
+/*body*/
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+  /*outline: red 2px solid;*/
+  overflow: auto;
+}
+/*boxes*/
+.box {
+  background-color: rgba(143, 143, 143, .6);
+  float:left;
+  height: 350px;
+  margin: 50px 5px;
+  width: 32.333%;
+  /*outline: red 2px solid;*/
+}
+/*box header*/
+.box-header {
+  color: white;
+  font-family: 'arial', sans-serif;
+  font-size:100px;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+  /*box paragraph*/
+.box li {
+  color: white;
+  font-family: "arial", sans-serif;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 10px;
+  line-height: 2em;
+  /*outline: red 2px solid;*/
+  /*list-style-type: square;*/
+}
+.box li a:link {
   color: white;
   text-decoration: none;
-  text-align:center;
 }
-a:visited {
+.box li a:visited {
   color: white;
 }
-
-a:hover {
+.box li a:hover {
   color: white;
   text-decoration: underline;
 }
-
-a:active {
+.box li a:active {
   color: white;
-  text-align:center;
-}
-
-/*boxes*/
-.container {
-  width: 300px;
-  height: 300px;
-  background-color: rgba(143, 143, 143, 1.0);
-  color: white;
-  float:left;
-  margin-top: 50px;
-	margin-left: 20px;
-  overflow-x: auto;
-}
-/*box header*/
-.container span {
-  font-family: 'arial', sans-serif;
-  font-size:100px;
-  }
-  /*box paragraph*/
-.container .info {
-  font-family: "arial", sans-serif;
-  font-size: 16px;
-  text-align: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  line-height: 2;
 }
