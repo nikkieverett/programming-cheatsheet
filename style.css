@@ -22,7 +22,7 @@ header {
   float:left;
   height: 350px;
   margin: 50px 5px;
-  width: 32.333%;
+  width: 32%;
   /*outline: red 2px solid;*/
 }
 /*box header*/
@@ -32,18 +32,18 @@ header {
   font-size:100px;
   text-align: center;
   text-transform: uppercase;
+  border-bottom: white 2px solid;
   }
 
   /*box paragraph*/
 .box li {
   color: white;
   font-family: "arial", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 30px;
   margin-right: 10px;
   line-height: 2em;
   /*outline: red 2px solid;*/
-  /*list-style-type: square;*/
 }
 .box li a:link {
   color: white;

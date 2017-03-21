@@ -57,18 +57,18 @@ header a:hover {
   /*outline: red 2px solid;*/
 }
 .column-left h1 {
-  text-align: center;
   font-size: 3em;
   font-family: "lucida console", monospace;
-  text-transform: uppercase;
   margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .column-left li {
-  font-family: 'merriweather', serif;
-  padding-left: 20px;
-  line-height: 50px;
-  text-transform: uppercase;
   border-bottom: rgba(199, 148, 72, .5) solid 2px;
+  font-family: 'merriweather', serif;
+  line-height: 50px;
+  padding-left: 20px;
+  text-transform: uppercase;
 }
 .column-left a:link {
   color: black;
@@ -88,19 +88,21 @@ header a:hover {
 .column-right {
   color: black;
   float: left;
+  height: 900px;
   margin-top: 30px;
   margin-left: 30px;
-  height: 900px;
   width: 72%;
   /*outline: red 2px solid;*/
 }
 .column-right h1 {
+  background-color: grey;
   font-family: "poiret one", cursive;
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 15px;
+  margin-top: 15px;
+  padding-left: 10px;
   text-transform: uppercase;
-  background-color: grey;
   /*outline: 2px red solid;*/
 
 }
@@ -108,19 +110,50 @@ header a:hover {
   font-family: "poiret one", cursive;
   font-size: 1.5em;
   margin-bottom: 30px;
-  text-transform: uppercase;
   /*outline: 2px red solid;*/
 }
-.column-right p{
-  font-family: "poiret one", cursive;
-  font-size: 1.2em;
-  text-transform: capitalize;
-  padding: 15px;
-  line-height: 1.6em;
-  /*outline: 2px red solid;*/
-}
-.column-right li{
+.column-right p {
+  /*font-family: "poiret one", cursive;*/
   font-family: "merriweather", serif;
-  margin-left: 40px;
   line-height: 1.6em;
+  padding: 15px;
+  /*outline: 2px red solid;*/
+}
+.column-right li {
+  font-family: "merriweather", serif;
+  line-height: 1.6em;
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+/*------------------------------------ color boxes*/
+.color-box {
+  height: 100px;
+  width: 10%;
+  float: left;
+  margin-left: 2%;
+  background-color: darkSlateGrey;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+.color-box span {
+  font-size: 14px;
+}
+.opacity-box {
+  height: 100px;
+  width: 18.3333%;
+  float: left;
+  margin-left: 2%;
+  background-color: darkSlateGrey;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+.color-link {
+  clear:both;
+  padding-top: 30px;
+  font-family: "merriweather", serif;
 }

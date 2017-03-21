@@ -1,177 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
-      <title>CSS Borders and Backgrounds</title>
-      <link href="cssreset.css" rel="stylesheet" />
-    <style>
-
-      #whole-page{
-        max-width: 1000px;
-        margin: 10px auto 10px auto;
-        font-family:"arial", sans-serif;
-      }
-
-      /* nav bar */
-      .header {
-        background-color: white;
-        color: black;
-        font-family: "lucida console", monospace;
-        font-size: 62px;
-        border-bottom: solid 5px black;
-        margin: 0 auto 0 auto;
-        padding: 20px;
-      }
-      .button {
-        border: solid 2px black;
-        border-radius: 5px;
-        font-size: 40px;
-        float:right;
-        margin-top:10px;
-        margin-right:20px;
-      }
-
-      /* nav bar links */
-      .header a:link, a:visited, a:active, a:hover {
-        color: black;
-        text-decoration: none;
-      }
-
-      /* general text */
-      h3 {
-        font-size: 20px;
-        padding-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      p{
-        font-size:16px;
-        line-height: 40px;
-        margin-top:10px;
-        border: solid white 3px;
-        border-radius: 6px;
-        background-color: rgba(143, 143, 143, 1.0);
-        height:40px;
-        width:100%;
-        padding-left: 10px;
-
-      }
-
-      /*lists*/
-      ul {
-        text-align: center;
-        font-family: "arial", sans-serif;
-        max-width: 600px;
-        margin: 10px auto 10px auto;
-        line-height: 30px;
-      }
-      li {
-        margin-top:5px;
-      }
-    </style>
+    <meta charset="utf-8">
+    <title>CSS Font Properties</title>
+    <link href="cssreset.css" rel="stylesheet" />
+    <link href="css-style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Poiret+One" rel="stylesheet">
   </head>
 
   <body>
-    <div class="header">
-      <a href="index.html">CHEAT SHEET</a>
-
-      <div class="button" id="css">
-        <a href="css.html">CSS</a>
+    <header>
+      <a href="index.html">cheat sheet</a>
+      <div class ="button html">
+        <a href="html.html">html</a>
       </div>
-      <div class ="button" id="html">
-        <a href="html.html">HTML</a>
+      <div class="button js">
+        <a href="js.html">js</a>
       </div>
-      <div class="button" id="js">
-        <a href="js.html">JS</a>
+    </header>
+    <div class="container">
+      <div class="column-left">
+        <h1>css</h1>
+        <ul>
+          <li><a href="font.html">font and text properties</a></li>
+          <li><a href="borders.html">backgrounds and borders</a></li>
+          <li><a href="color.html">colors and opacity</a></li>
+          <li>selectors</li>
+        </ul>
       </div>
-    </div>
-
-    <div id="whole-page">
-      <h3>
-        The CSS border properties allow you to specify the style, width, and color of an element's border. The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border). This allows you to do mixed borders.
-      </h3>
-      <p>
-        Border styles include:
-      </p>
-      <ul>
-        <li style="border:solid 2px black">
-          solid
-        </li>
-        <li style="border:dotted 2px black">
-          dotted
-        </li>
-        <li style="border:dashed 2px black">
-          dashed
-        </li>
-        <li style="border:double 6px black">
-          double
-        </li>
-        <li style="border:groove 6px grey">
-          groove
-        </li>
-        <li style="border:ridge 6px grey">
-          ridge
-        </li>
-        <li style="border:inset 6px grey">
-          inset
-        </li>
-        <li style="border:outset 6px grey">
-          outset
-        </li>
-        <li style="border:none 2px black">
-          none
-        </li>
-        <li style="border:hidden 2px black">
-          hiden
-        </li>
-        <li style="border-top: dotted 2px black; border-bottom: dashed 2px black; border-left 2px black: solid 2px black; border-right: double">
-          mixed
-        </li>
-      </ul>
-      <p>
-        The border-radius property is used to add rounded borders to an element.
-      </p>
-      <ul>
-        <li style="border:solid 2px black">
-          normal
-        </li>
-        <li style="border:solid 2px black; border-radius: 2px">
-          round
-        </li>
-        <li style="border:solid 2px black; border-radius: 5px">
-          rounder
-        </li>
-        <li style="border:solid 2px black; border-radius: 7px">
-          roundest
-        </li>
-      </ul>
-
-      <h3>
-        The CSS background properties are used to define the background effects for elements.
-      </h3>
-      <p>
-        The background-color property specifies the background color of an element.
-      </p>
-      <ul>
-        <li style="background-color:red">
-          red
-        </li>
-        <li style="background-color:yellow">
-          yellow
-        </li>
-        <li style="background-color:green">
-          green
-        </li>
-      </ul>
-      <p>
-        Other background properties that can be used include:
-      </p>
-      <ul>
-        <li>background-image</li>
-        <li>background-repeat</li>
-        <li>background-attachment</li>
-        <li>background-position</li>
-      </ul>s
+      <div class="column-right">
+        <h1>borders</h1>
+        <p>
+          The CSS border properties allow you to specify the style, width, and color of an element's border. The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border). This allows you to do mixed borders.
+        </p>
+        <h2>
+          Border Styles
+        </h2>
+        <ul>
+          <li style="border:solid 2px black">
+            solid
+          </li>
+          <li style="border:dotted 2px black">
+            dotted
+          </li>
+          <li style="border:dashed 2px black">
+            dashed
+          </li>
+          <li style="border:double 6px black">
+            double
+          </li>
+          <li style="border:groove 6px grey">
+            groove
+          </li>
+          <li style="border:ridge 6px grey">
+            ridge
+          </li>
+          <li style="border:inset 6px grey">
+            inset
+          </li>
+          <li style="border:outset 6px grey">
+            outset
+          </li>
+          <li style="border:none 2px black">
+            none
+          </li>
+          <li style="border:hidden 2px black">
+            hiden
+          </li>
+          <li style="border-top: dotted 2px black; border-bottom: dashed 2px black; border-left 2px black: solid 2px black; border-right: double">
+            mixed
+          </li>
+        </ul>
+        <h2>
+          Border Radius
+        </h2>
+        <ul>
+          <li style="border:solid 2px black">
+            normal
+          </li>
+          <li style="border:solid 2px black; border-radius: 2px">
+            round
+          </li>
+          <li style="border:solid 2px black; border-radius: 5px">
+            rounder
+          </li>
+          <li style="border:solid 2px black; border-radius: 7px">
+            roundest
+          </li>
+        </ul>
+        <h1>backgrounds</h1>
+        <p>
+          The CSS background properties are used to define the background effects for elements.
+        </p>
+        <h2>
+          Background Color
+        </h2>
+        <ul>
+          <li style="background-color:red">
+            red
+          </li>
+          <li style="background-color:yellow">
+            yellow
+          </li>
+          <li style="background-color:green">
+            green
+          </li>
+        </ul>
+        <h2>
+          Other Background Properties
+        </h2>
+        <ul>
+          <li>background-image</li>
+          <li>background-repeat</li>
+          <li>background-attachment</li>
+          <li>background-position</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

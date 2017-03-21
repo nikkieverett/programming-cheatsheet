@@ -2,94 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CSS Color and Opacity</title>
+    <title>Colors and Opacity</title>
     <link href="cssreset.css" rel="stylesheet" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      #whole-page{
-        max-width: 1000px;
-        margin: 0 auto 0 auto;
-      }
-
-      /* nav bar */
-      .header {
-        background-color: white;
-        color: black;
-        font-family: "lucida console", monospace;
-        font-size: 62px;
-        border-bottom: solid 5px black;
-        margin: 0 auto 0 auto;
-        padding: 20px;
-      }
-      .button {
-        border: solid 2px black;
-        border-radius: 5px;
-        font-size: 40px;
-        float:right;
-        margin-top:10px;
-        margin-right:20px;
-      }
-
-      /* nav bar links */
-      .header a:link, a:visited, a:active, a:hover {
-        color: black;
-        text-decoration: none;
-      }
-
-      .color-box {
-        height: 100px;
-        width: 100px;
-        float: left;
-        margin-left: 40px;
-        background-color: darkSlateGrey;
-        color: white;
-        padding: 50px;
-        text-align: center;
-        font-size: 25px;
-      }
-      .color-box span {
-        font-size: 14px;
-      }
-      .opacity-box {
-        height: 100px;
-        width: 100px;
-        float: left;
-        margin-left: 90px;
-        background-color: darkSlateGrey;
-        color: white;
-        padding: 50px;
-        text-align: center;
-        font-size: 25px;
-      }
-      h3 {
-        font-size: 20px;
-
-        padding-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    </style>
+    <link href="css-style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Poiret+One" rel="stylesheet">
   </head>
 
   <body>
-    <div class="header">
-      <a href="index.html">CHEAT SHEET</a>
-      <div class="button" id="css">
-        <a href="css.html">CSS</a>
+    <header>
+      <a href="index.html">cheat sheet</a>
+      <div class ="button html">
+        <a href="html.html">html</a>
       </div>
-      <div class ="button" id="html">
-        <a href="html.html">HTML</a>
+      <div class="button js">
+        <a href="js.html">js</a>
       </div>
-      <div class="button" id="js">
-        <a href="js.html">JS</a>
+    </header>
+    <div class="container">
+      <div class="column-left">
+        <h1>css</h1>
+        <ul>
+          <li><a href="font.html">font and text properties</a></li>
+          <li><a href="borders.html">backgrounds and borders</a></li>
+          <li><a href="color.html">colors and opacity</a></li>
+          <li>selectors</li>
+        </ul>
       </div>
-    </div>
-    <div id="whole-page">
-      <div style="height: 300px">
-        <h3>Colors in CSS are most often specified by:</h3>
+
+      <!--div style="height: 300px">-->
+      <div class="column-right">
+        <h1>Colors</h1>
         <div class="color-box">
           Color Name
           <br />
@@ -110,12 +52,13 @@
           <br />
           <span>"#2F4F4F"</span>
         </div>
-      </div>
 
-      <a href="https://www.w3schools.com/colors/colors_names.asp">Here is a list of accepted color names</a>
+        <div class="color-link">
+          <a href="https://www.w3schools.com/colors/colors_names.asp">List of accepted color names</a>
+        </div>
 
-      <div style="height: 300px">
-        <h3>The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, being the more transparent.</h3>
+        <!--div style="height: 300px"-->
+        <h1>Opacity</h1>
         <div class="opacity-box" style="opacity: 0.1">
           0.0
         </div>
