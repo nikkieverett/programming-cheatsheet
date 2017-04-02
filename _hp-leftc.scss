@@ -1,0 +1,20 @@
+.hp-leftc {
+  float: left;
+  width: 25%;
+  background-color: black;
+  border-right: 10px solid $secondary-color;
+}
+.hp-leftc li {
+  margin: 10px 0 10px 10px;
+  padding: 10px;
+}
+.hp-leftc a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+}
+.hp-leftc li:hover {
+  background-color: $main-color;
+}

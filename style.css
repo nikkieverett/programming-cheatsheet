@@ -1,61 +1,135 @@
-/* nav bar */
-header {
-  background-color: white;
-  border-bottom: black 5px solid;
-  color: black;
-  font-family: "lucida console", monospace;
-  font-size: 62px;
-  margin: 0 auto;
-  padding: 20px;
-  text-transform: uppercase;
-}
-/*body*/
-.container{
-  max-width: 80%;
-  margin: 0 auto;
-  /*outline: red 2px solid;*/
-  overflow: auto;
-}
-/*boxes*/
-.box {
-  background-color: rgba(143, 143, 143, .6);
-  float:left;
-  height: 350px;
-  margin: 50px 5px;
-  width: 32%;
-  /*outline: red 2px solid;*/
-}
-/*box header*/
-.box-header {
-  color: white;
-  font-family: 'arial', sans-serif;
-  font-size:100px;
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom: white 2px solid;
-  }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-  /*box paragraph*/
-.box li {
-  color: white;
-  font-family: "arial", sans-serif;
-  font-size: 18px;
-  margin-left: 30px;
-  margin-right: 10px;
-  line-height: 2em;
-  /*outline: red 2px solid;*/
-}
-.box li a:link {
-  color: white;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.wrapper {
+  background-image: url("bg-image.svg");
+  background-color: #3c3c3c;
+  height: 100%; }
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  overflow: auto;
+  font-family: "Lato", sans-serif;
+  background-color: white; }
+
+/* nav bar */
+.head {
+  background-color: white;
+  border-bottom: #c79448 10px solid;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: auto; }
+
+.head h1 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  float: left;
+  text-transform: uppercase; }
+
+.head a {
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+#logo {
+  color: rgba(143, 143, 143, 0.5);
+  font-size: 70px;
+  float: left;
+  margin: 0 20px; }
+
+.hp-leftc {
+  float: left;
+  width: 25%;
+  background-color: black;
+  border-right: 10px solid #c79448; }
+
+.hp-leftc li {
+  margin: 10px 0 10px 10px;
+  padding: 10px; }
+
+.hp-leftc a {
   text-decoration: none;
-}
-.box li a:visited {
   color: white;
-}
-.box li a:hover {
-  color: white;
-  text-decoration: underline;
-}
-.box li a:active {
-  color: white;
-}
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px; }
+
+.hp-leftc li:hover {
+  background-color: rgba(143, 143, 143, 0.5); }
+
+.hp-rightc {
+  float: left;
+  width: 73%;
+  background-color: white;
+  color: black; }
+
+.hp-rightc li {
+  margin: 10px 0 0 10px;
+  padding: 10px; }
+
+.hp-rightc li:hover {
+  background-color: rgba(143, 143, 143, 0.5); }
+
+.hp-rightc a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 28px; }
+
+/*body*/
+.main-links {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 40px 0;
+  overflow: auto; }
+
+.active {
+  background-color: white;
+  color: black; }

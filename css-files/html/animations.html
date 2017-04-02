@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animations</title>
+    <link href="../css-style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="head">
+        <span id="logo">*</span>
+        <h1><a href="../../index.html">cheatsheet</a></h1>
+        <div class ="button html">
+          <a href="html.html">html</a>
+        </div>
+        <div class="button js">
+          <a href="js.html">js</a>
+        </div>
+      </header>
+      <div class="container">
+        <div class="column-left">
+          <h1>css</h1>
+          <ul>
+            <li><a href="font.html">font properties</a></li>
+            <li><a href="borders.html">backgrounds and borders</a></li>
+            <li><a href="color.html">colors and opacity</a></li>
+            <li><a href="animations.html">animations</a></li>
+            <li><a href="transitions.html">transitions</a></li>
+          </ul>
+        </div>
+
+        <div class="column-right">
+          <h1>animations</h1>
+          <p>
+            The animation property in CSS can be used to animate many other CSS properties such as color, background-color, height, or width. Each animation needs to be defined with the @keyframes at-rule which is then called with the animation property.
+          </p>
+            <div class="example">
+              <p>
+                Color Change
+              </p>
+              <pre>
+                .example {
+                  width:600px;
+                  height:200px;
+                  margin: 15px auto;
+                  animation: pulse 5s infinite;
+                }
+
+                @keyframes pulse {
+                  0% {
+                    background-color: #001F3F;
+                  }
+                  100% {
+                    background-color: #FF4136;
+                  }
+                }
+              </pre>
+            </div>
+          <h1>using key frames</h1>
+            <div class="swing examples">
+              <p>swing</p>
+              <pre>
+                @keyframes swing
+              {
+                  15%
+                  {
+                      -webkit-transform: translateX(5px);
+                      transform: translateX(5px);
+                  }
+                  30%
+                  {
+                      -webkit-transform: translateX(-5px);
+                      transform: translateX(-5px);
+                  }
+                  50%
+                  {
+                      -webkit-transform: translateX(3px);
+                      transform: translateX(3px);
+                  }
+                  65%
+                  {
+                      -webkit-transform: translateX(-3px);
+                      transform: translateX(-3px);
+                  }
+                  80%
+                  {
+                      -webkit-transform: translateX(2px);
+                      transform: translateX(2px);
+                  }
+                  100%
+                  {
+                      -webkit-transform: translateX(0);
+                      transform: translateX(0);
+                  }
+              }
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

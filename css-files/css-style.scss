@@ -1,0 +1,89 @@
+@import '../variables';
+@import '../reset';
+@import '../bg-page-container';
+@import '../head';
+@import 'topnav';
+@import 'column-left';
+@import 'column-right';
+@import 'color-boxes';
+@import 'transitions';
+
+.container {
+  margin-top: 0px;
+}
+
+
+.example {
+  width:600px;
+  margin: 15px auto;
+  animation: pulse 5s infinite;
+  padding: 10px;
+  color: white;
+}
+.example p {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2em;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+.swing {
+  width:600px;
+  margin: 20px auto;
+  background-color: $main-color;
+  padding:10px;
+}
+.examples p {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2em;
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.swing:hover
+{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}

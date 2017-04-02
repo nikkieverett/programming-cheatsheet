@@ -1,0 +1,12 @@
+.wrapper {
+  background-image: url('bg-image.svg');
+  background-color: $bg-color;
+  height: 100%;
+}
+.container{
+  max-width: 960px;
+  margin: 40px auto;
+  overflow: auto;
+  font-family: $main-font;
+  background-color: white;
+}
