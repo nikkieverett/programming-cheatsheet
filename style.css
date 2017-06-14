@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper {
+body {
   background-image: url("bg-image.svg");
   background-color: #3c3c3c;
   height: 100%; }
